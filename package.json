@@ -2,7 +2,7 @@
 {
   "name": "react-native-contains-location",
   "version": "1.0.0",
-  "description": "",
+  "description": "Native module to calculate if my current coordinates are in some specific area",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Kondo Soft",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
