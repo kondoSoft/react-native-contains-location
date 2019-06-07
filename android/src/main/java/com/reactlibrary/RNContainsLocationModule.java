@@ -32,13 +32,13 @@ public class RNContainsLocationModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void containsLocation(ReadableMap point, ReadableArray polygon, Callback completionCallback) {
 
-    LatLng locationPoint = new LatLng(point.getDouble("lat"), point.getDouble("lng"));
+    LatLng locationPoint = new LatLng(point.getDouble("latitude"), point.getDouble("longitude"));
 
     List<LatLng> polygonList = new ArrayList<>();
 
     for (int i = 0; i < polygon.size(); i++) {
       ReadableMap vertex = polygon.getMap(i);
-      polygonList.add(new LatLng(vertex.getDouble("lat"), vertex.getDouble("lng")));
+      polygonList.add(new LatLng(vertex.getDouble("latitude"), vertex.getDouble("longitude")));
     }
 
     boolean isWithinCoverage = PolyUtil.containsLocation(locationPoint, polygonList, false);
