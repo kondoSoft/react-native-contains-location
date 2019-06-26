@@ -1,6 +1,6 @@
 {
   "name": "react-native-contains-location",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Native module to calculate if my current coordinates are in some specific area",
   "main": "index.js",
   "scripts": {
