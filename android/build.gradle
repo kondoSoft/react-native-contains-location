@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.google.android.gms:play-services-maps:16+'
-    compile 'com.google.maps.android:android-maps-utils:0.5+'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.google.android.gms:play-services-maps:16+'
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
 }

@@ -9,7 +9,7 @@ export const containsLocation = (point, polygon) => {
       if (isWithinCoverage) {
         resolve(true)
       } else {
-        reject(false)
+        resolve(false)
       }
     })
   })
